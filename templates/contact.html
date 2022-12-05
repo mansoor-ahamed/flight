@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% block title %}
+CONTACT PAGE
+{% endblock title %}
+{% block body %}
+
+{% load static %}
+<img class="w3-image" src={% static 'images/c3.jpg' %} alt="London" width="1600" height="350">
+  
+<div class="container mt-3">
+    <div style+"text-align:center">
+
+   <h2 style="font-style:bold; font-family:cursive;color:rgb(17, 11, 12);" <h6> Lets Work Together! </h6>
+
+  </div>
+
+  <div class="row">
+    <div class="column">
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <p> <h5 style="font-style:bold; font-family:cursive;color:rgba(184, 5, 154, 0.808);" <p> We'd love to hear from you! </p>
+        <p> Send us a message using the form below,or email us. </p>
+           
+      </h5>  </p>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <form action="/contact" method="POST">{% csrf_token %}
+    
+          <div class="form-group">
+            <input type="text" class="form-control mt-2" id="name" name="name" placeholder=" Your Name" required>
+          </div>
+         
+        
+           <div class="form-group">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+          </div>
+        
+            <div class="form-group">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Your Phone No" required> 
+          </div>
+         
+          <div class="form-group">
+            <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Write Something..." required></textarea>
+          </div>
+        <hr>
+          <button class="btn btn-bg btn-success" type="submit"> Let's Talk </button>
+        </form>
+        <p>
+          <p>
+  
+          </p>
+        </p>
+        
+  
+        
+        
+
+
+
+      </blockquote>
+    </div>
+  </div>
+
+
+
+
+
+  <p>
+    <p>
+
+    </p>
+  </p>
+   
+    
+
+    
+        
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Contact Information</h5><p> <p></p>
+                <h6> ADDRESS </h6>
+        <h5 class="card-title"></h5>
+        <i class="fa fa-map-marker"
+        style= "width:30px"> </i>  <span style='font-size:20px;'>&#128205;</span>  77 Baker Street Kormangala
+         Bangalore 56655
+         Karnataka,India 
+         <br><p> </p>
+
+
+
+         <h6> Contact Us </h6>
+        <i class ="fa fa-Phone" style="width:30px"></i> <span style='font-size:20px;'>&#128222;</span>  Say Hello : +91 9071566296 <br> <p>
+          <p>
+
+          </p>
+        </p>
+
+        <h6> Mail Us</h6>
+        <i class="fa fa-envelope" style="width:30px"></i> <span style='font-size:20px;'>&#128231;</span> Message Me : www.BharathAirlines.com <br>
+
+         
+          
+          <br><p> </p>
+
+         <p>
+
+         </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Connect Us</h5>
+                <h6> Our Branches</h6>
+         <i class="fa fa-map-marker"
+         style= "width:30px"> </i> <span style='font-size:20px;'>&#128136;</span>  Bangalore , Chennai , Cochi , Hyderabad , Yelahanka and JP Nagar.
+        <p> <p> </p> </p>
+
+       
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body class="w3-light-grey">
+    
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="#" target="_blank" class="w3-hover-text-green">BharathAirlines.com</a></p>
+</footer>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+{% endblock body %}
